@@ -80,24 +80,24 @@ const App = () => {
   let convertedAmount = (exchangeRate, amount ) => {return exchangeRate * amount }
 
   const selectBaseValues = baseCurrencies.map((e) => 
-   <select key={e.id}>{e.symbol}</select>
+   <option key={e.id}>{e.symbol}</option>
   )
 
   const selectTargetValues = targetCurrencies.map((e) => 
-   <select key={e}>{e}</select>
+   <option key={e}>{e}</option>
   )
   return (
     <div className="App">
       <h2>Crypto Currency Converter</h2>
       <Card style={cardStyling}>
         <p>Select the Base Currency</p>
-        {selectBaseValues}
+        <select>{selectBaseValues}</select>
         
       </Card>
 
       <Card style={cardStyling}>
         <p>Select the Target Currency</p>
-        {selectTargetValues}
+        <select>{selectTargetValues}</select>
       </Card>
 
       <Card style={cardStyling}>
