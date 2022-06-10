@@ -1,0 +1,8 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "api for tc coding challenge",
+  "main": "app.js",
+  "author": "Sylvia Engmann",
+  "license": "MIT"
+}
